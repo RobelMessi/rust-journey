@@ -34,10 +34,10 @@ fn main() {
     let (x, y, z) = tup; //Breaks tuple into 3 parts
     println!("The value of y is {y}");
 
-    let _x: = (500, 6.4, 1);
-    let _five_hundred = x.0;
-    let _six_point_four = x.1;
-    let _one = x.2; //accesses each element of tuple with its indice
+    let _x = (500, 6.4, 1);
+    let _five_hundred = _x.0;
+    let _six_point_four = _x.1;
+    let _one = _x.2; //accesses each element of tuple with its indice
 
     //Arrays
     let a = [1, 2, 3, 4, 5];
