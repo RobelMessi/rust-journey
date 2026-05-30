@@ -10,11 +10,13 @@ fn main() {
     loop {
         println!("Please input your guess FN 🥷 ");
         let mut guess_string = String::new();
+        //The literal string characters of the number
         io::stdin().read_line(&mut guess_string).expect("Failed to read line");
-         let guess:u32 = guess_string.trim().parse().expect("Please type a number!");
+        let guess:u32 = guess_string.trim().parse().expect("Please type a number!");
     // trim: strips out hidden newline space
     // parse: convert clean string slice into number
-    // u32: tells Rust what 32-bit integer to turn it into
+    // u32: tells Rust what 32-bit integer to turn it into CONVERTS IT TO AN INTEGER SO YOU CAN COMPARE TO 
+    //SECRET NUMBER
         if guess<secret_number{
             println!("The number you guessed is lower than the secret number");
         } else if guess>secret_number{
